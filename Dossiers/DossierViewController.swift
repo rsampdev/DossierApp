@@ -27,7 +27,7 @@ class DossierViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         title = dossier?.name
         nameTextField.text = dossier?.name
@@ -35,6 +35,15 @@ class DossierViewController: UIViewController {
         knownAssociatesTextField.text = dossier?.knownAssociates.joined(separator: ", ")
         occupationTextField.text = dossier?.occupation
         languagesSpokenTextField.text = dossier?.languagesSpoken.joined(separator: ", ")
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        let viewControllers = self.navigationController?.viewControllers;
+        let rootViewController = viewControllers?.first
+        
+        (rootViewController as! OrganizationViewController).operatives?[dossierIndex!] = dossier!
     }
     
     @IBAction func saveText(_ sender: AnyObject) {

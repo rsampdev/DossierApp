@@ -30,13 +30,11 @@ class OrganizationViewController: UIViewController {
         
         title = organization?.name
         
-        firstDossierButton?.setTitle(operatives?[0].name, for: UIControlState.normal)
-        secondDossierButton?.setTitle(operatives?[1].name, for: UIControlState.normal)
-        thirdDossierButton?.setTitle(operatives?[2].name, for: UIControlState.normal)
+        setButtonText()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewWillAppear(_ animated: Bool) {
+        setButtonText()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -66,6 +64,12 @@ class OrganizationViewController: UIViewController {
     
     @IBAction private func buttonTapped(button: UIButton) {
         button.isSelected = !button.isSelected
+    }
+    
+    func setButtonText() {
+        firstDossierButton?.setTitle(operatives?[0].name, for: UIControlState.normal)
+        secondDossierButton?.setTitle(operatives?[1].name, for: UIControlState.normal)
+        thirdDossierButton?.setTitle(operatives?[2].name, for: UIControlState.normal)
     }
     
 }
