@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		33CA279C1D81F67F00F0DD5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA279B1D81F67F00F0DD5E /* AppDelegate.swift */; };
-		33CA279E1D81F67F00F0DD5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA279D1D81F67F00F0DD5E /* ViewController.swift */; };
+		33CA279E1D81F67F00F0DD5E /* OrganizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA279D1D81F67F00F0DD5E /* OrganizationViewController.swift */; };
 		33CA27A11D81F67F00F0DD5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CA279F1D81F67F00F0DD5E /* Main.storyboard */; };
 		33CA27A31D81F67F00F0DD5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CA27A21D81F67F00F0DD5E /* Assets.xcassets */; };
 		33CA27A61D81F67F00F0DD5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CA27A41D81F67F00F0DD5E /* LaunchScreen.storyboard */; };
 		33CA27B11D81F68000F0DD5E /* DossiersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA27B01D81F68000F0DD5E /* DossiersTests.swift */; };
 		33CA27BC1D81F68000F0DD5E /* DossiersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA27BB1D81F68000F0DD5E /* DossiersUITests.swift */; };
+		33CA27CA1D81F6D700F0DD5E /* Dossier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA27C91D81F6D700F0DD5E /* Dossier.swift */; };
+		33CA27CC1D81F89E00F0DD5E /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA27CB1D81F89E00F0DD5E /* Organization.swift */; };
+		33CA27CE1D81FB5600F0DD5E /* DossierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA27CD1D81FB5600F0DD5E /* DossierViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		33CA27981D81F67F00F0DD5E /* Dossiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dossiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CA279B1D81F67F00F0DD5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33CA279D1D81F67F00F0DD5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33CA279D1D81F67F00F0DD5E /* OrganizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationViewController.swift; sourceTree = "<group>"; };
 		33CA27A01D81F67F00F0DD5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33CA27A21D81F67F00F0DD5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33CA27A51D81F67F00F0DD5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		33CA27B71D81F68000F0DD5E /* DossiersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DossiersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CA27BB1D81F68000F0DD5E /* DossiersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DossiersUITests.swift; sourceTree = "<group>"; };
 		33CA27BD1D81F68000F0DD5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33CA27C91D81F6D700F0DD5E /* Dossier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dossier.swift; sourceTree = "<group>"; };
+		33CA27CB1D81F89E00F0DD5E /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		33CA27CD1D81FB5600F0DD5E /* DossierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DossierViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				33CA279B1D81F67F00F0DD5E /* AppDelegate.swift */,
-				33CA279D1D81F67F00F0DD5E /* ViewController.swift */,
+				33CA279D1D81F67F00F0DD5E /* OrganizationViewController.swift */,
 				33CA279F1D81F67F00F0DD5E /* Main.storyboard */,
 				33CA27A21D81F67F00F0DD5E /* Assets.xcassets */,
 				33CA27A41D81F67F00F0DD5E /* LaunchScreen.storyboard */,
 				33CA27A71D81F67F00F0DD5E /* Info.plist */,
+				33CA27C91D81F6D700F0DD5E /* Dossier.swift */,
+				33CA27CB1D81F89E00F0DD5E /* Organization.swift */,
+				33CA27CD1D81FB5600F0DD5E /* DossierViewController.swift */,
 			);
 			path = Dossiers;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33CA279E1D81F67F00F0DD5E /* ViewController.swift in Sources */,
+				33CA279E1D81F67F00F0DD5E /* OrganizationViewController.swift in Sources */,
 				33CA279C1D81F67F00F0DD5E /* AppDelegate.swift in Sources */,
+				33CA27CE1D81FB5600F0DD5E /* DossierViewController.swift in Sources */,
+				33CA27CC1D81F89E00F0DD5E /* Organization.swift in Sources */,
+				33CA27CA1D81F6D700F0DD5E /* Dossier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +515,7 @@
 				33CA27C21D81F68000F0DD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33CA27C31D81F68000F0DD5E /* Build configuration list for PBXNativeTarget "DossiersTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +524,7 @@
 				33CA27C51D81F68000F0DD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33CA27C61D81F68000F0DD5E /* Build configuration list for PBXNativeTarget "DossiersUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +533,7 @@
 				33CA27C81D81F68000F0DD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
